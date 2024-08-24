@@ -1,0 +1,1647 @@
+@font-face {
+  font-family: 'HacenTunisiaLt';
+  src: url('fonts/HacenTunisiaLt.eot');
+  src: url('fonts/HacenTunisiaLt.woff2') format('woff2'),
+       url('fonts/HacenTunisiaLt.woff') format('woff'),
+       url('fonts/HacenTunisiaLt.ttf') format('truetype'),
+       url('fonts/HacenTunisiaLt.svg#HacenTunisiaLt') format('svg'),
+       url('fonts/HacenTunisiaLt.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HacenTunisiaBd';
+  src: url('fonts/HacenTunisiaBold.eot');
+  src: url('fonts/HacenTunisiaBold.woff2') format('woff2'),
+       url('fonts/HacenTunisiaBold.woff') format('woff'),
+       url('fonts/HacenTunisiaBold.ttf') format('truetype'),
+       url('fonts/HacenTunisiaBold.svg#HacenTunisiaBold') format('svg'),
+       url('fonts/HacenTunisiaBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body
+{
+	margin: 0;
+    padding: 0;
+    text-align:center;
+	direction:rtl;
+	
+}
+.main{
+	margin-left:auto;
+	margin-right:auto;
+	width:970px;
+	text-align:right;
+}
+.page
+{
+	width:100%;
+	margin:0 auto;	
+}
+.logo{
+	display:inline-block;
+	width:200px;
+	height:118px;
+	margin-right:25px;
+}
+.logo img{
+	width:100%;
+}
+.hleft
+{
+	width:735px;
+	display:inline-block;
+	vertical-align:top;
+}
+.header .top
+{
+	float:left;
+	padding-top:15px;
+}
+.social
+{
+	width:75px;
+	display:inline-block;
+	vertical-align:top;
+	margin-left:15px;
+}
+.search
+{
+	width:135px;
+	display:inline-block;
+	border:1px solid #23bcaf;
+	background-color: #23bcaf;
+	vertical-align:top;
+}
+.search .tinput
+{
+	width:100px;
+	border:none;
+	font-family: 'HacenTunisiaLt';
+	font-size:12px;
+	color:#c2c2c2;
+	padding: 3px 5px 3px 0px;
+}
+.search .sbutton
+{
+	width:26px;
+	background-image:url(../images/search.jpg);
+	border:none;
+	cursor:pointer;
+	background-color:#23bcaf;
+	vertical-align: bottom;
+	background-repeat:no-repeat;
+}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic);
+
+
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.popupContainer{
+	position:absolute;
+	width:330px;
+	height: auto;
+	left:45%;
+	top:80px;
+	background: #FFF;
+}
+
+#modal_trigger {
+	margin:0px; 
+	width:100px; 
+	display:block;
+	background-color: white;
+	border:1px solid #6acb4c;
+    color: #6acb4c;
+    font-family: 'HacenTunisiaLt';
+    font-size: 12px;
+    padding: 5px;}
+.fa-google-plus:before
+{
+	margin-right: -11px;
+}
+.btn {padding:10px 20px; background: #F4F4F2;}
+.btn_red {background: #6acb4c; color: #FFF;}
+
+.btn:hover {background: #E4E4E2;}
+.btn_red:hover {background: #4db62d;color: #FFF;}
+
+a.btn {color:#666; text-align: center; text-decoration: none;}
+a.btn_red {color: #FFF;}
+
+.one_half {width:50%; display: block; float:left;font-family: 'HacenTunisiaLt';}
+.one_half.last {width:45%; margin-right:5%;}
+
+/* Popup Styles*/
+.popupHeader {font-size:16px; text-transform: uppercase;text-align:right;font-family: 'HacenTunisiaLt';}
+.popupHeader {background:#F4F4F2; position:relative; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.popupHeader .modal_close {position: absolute; left: 0; top:0; padding:10px 15px; background:#E4E4E2; cursor: pointer; color:#aaa; font-size:16px;}
+
+.popupBody {padding:20px;}
+
+
+/* Social Login Form */
+.social_login {}
+.social_login .social_box {display:block; clear:both; padding:10px; margin-bottom: 10px; background: #F4F4F2; overflow: hidden;}
+.social_login .icon {display:block; width:10px; padding:5px 15px; margin-right: 10px; float:right; color:#FFF; font-size:16px; text-align: center;} 
+.social_login .fb .icon {background:#3B5998;}
+.social_login .google .icon {background:#DD4B39;}
+.social_login .icon_title {display:block; padding:5px 0; float:right; font-weight: bold; font-size: 16px; color:#777;text-align:right;font-family: 'HacenTunisiaLt';margin-right: 35px;}
+.social_login .social_box:hover {background: #E4E4E2;}
+.fa-facebook-f:before, .fa-facebook:before{    margin-right: -4px;}
+.centeredText {text-align: center; margin: 20px 0; clear: both; overflow: hidden; text-transform: uppercase;font-family: 'HacenTunisiaLt';}
+
+.action_btns {clear:both; overflow: hidden;}
+.action_btns a {display: block;}
+
+/* User Login Form */
+.user_login {display: none;}
+.user_login label {display: block; margin-bottom:5px;font-family: 'HacenTunisiaLt'}
+.user_login input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_login input[type="checkbox"] {float:left; margin-right:5px;}
+.user_login input[type="checkbox"]+label {float:right;font-family: 'HacenTunisiaLt';}
+
+.user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.forgot_password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:#6acb4c;font-family: 'HacenTunisiaLt';}
+.forgot_password:hover{color:#4db62d;}
+/* User Register Form */
+.user_register {display: none;}
+.user_register label {display: block; margin-bottom:5px;font-family: 'HacenTunisiaLt';}
+.user_register input[type="text"], .user_register input[type="email"], .user_register input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_register input[type="checkbox"] {float:left; margin-right:5px;}
+.user_register input[type="checkbox"]+label {float:left;}
+
+.user_register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.menu
+{
+	margin-top:0px;
+	vertical-align:top;
+	display:inline-block;
+	text-align:right;
+	margin-top:15px;
+	
+}
+.login
+{
+	width:110px;
+	display:inline-block;
+	position:relative;
+	float:right;
+	margin-top:-4px;
+}
+.dp ul
+{
+	
+}
+.menu ul li
+{
+	display:inline-block;
+	padding-left:13px;
+	padding-right:13px;
+	
+}
+.menu ul
+{
+	width:100%;
+}
+.menu ul li a
+{
+	color:#6e6e6e;
+	text-decoration:none;
+	font-family: 'HacenTunisiaBd';
+	font-size:15px;
+	
+}
+.menu ul li a:hover, .menu ul li a:active{
+	border-bottom:#090 solid 2px;
+	color:#3b5333;
+}
+.menu > ul li.has-sub div {
+  	padding-right: 10px;
+	position: absolute;
+	margin: 0;
+	top: 72px;
+	list-style-type: none;
+	background-color:white;
+	border:1px solid #6acb4c;
+	z-index: 9999;
+	min-height:280px;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s ease-in-out;
+	-moz-transition: visibility 0s, opacity 0.5s ease-in-out;
+	webkit-transition: visibility 0s, opacity 0.5s ease-in-out;
+   visibility: hidden;
+}
+.menu > ul li.has-sub:hover > div
+{
+	opacity: 1;
+	visibility: visible;
+	
+}
+.dp h3
+{
+	color:#828283;
+	 font-family: 'HacenTunisiaLt';
+   font-size:13px;
+   margin:0px;
+}
+.dp ul.dashed > li {
+  text-indent: -10px;
+}
+.dp ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+      padding-left: 5px;
+	  color:#6acb4c;
+}
+.dp ul
+{
+	width: 180px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+	list-style:square;
+	color:#828283;
+	background-color:#f4f4f4;
+	border-radius:5px;
+}
+.menu > ul li.has-sub ul li a
+{
+  font-family: 'HacenTunisiaLt';
+   font-size:13px;
+}
+.menu > ul li.has-sub ul li {
+  display: block;
+  border:none;
+
+
+}
+.menu > ul li.has-sub ul li a {
+  color:#6acb4c;
+  border:none;
+}
+.slider
+{
+	direction:ltr;
+	height:245px;
+}
+.container
+{
+	height:100%;
+}
+.ism-slider
+{
+	height:100%;
+}
+.ism-slide a
+{
+	font-family: 'HacenTunisiaBd';
+	direction:rtl;
+	text-decoration:none;
+}
+.ism-slide a .fst
+{
+	font-size:22px;
+	padding-bottom:10px;
+	
+}
+.ism-slide a .sec
+{
+	font-family: 'HacenTunisiaLt';
+	font-size:15px;
+	margin-bottom:15px;
+}
+.ism-slide a .button
+{
+	background-color: #6acb4c;
+    padding: 5px 5px;
+    color: white;
+    font-family: 'HacenTunisiaLt';
+    width: 100px;
+    text-align: center;
+    margin-top: 30px;
+}
+.content_right{
+	width:715px;
+	display:inline-block;
+}
+.about{
+	width:100%;
+}
+.about .text
+{
+	width:500px;
+	display:inline-block;
+	font-family: 'HacenTunisiaLt';
+	vertical-align:top;
+}
+.about .text h2
+{
+	font-size:22px;
+	color:#f4137d;
+}
+.about .text p
+{
+	font-size:15px;
+	color:#828283;
+	line-height: 33px;
+}
+.about .text p a
+{
+	font-size:15px;
+	color:#23bcaf;
+	text-decoration:none;
+}
+.about .image{
+	width:200px;
+	display:inline-block;
+	vertical-align:top;
+	margin-top: 45px;
+    margin-right: 5px;
+	border: 2px solid #23bcaf;
+    padding: 4px;
+}
+.about .image img{
+	width:100%;
+}
+.services{
+	margin-top:40px;
+	margin-bottom:40px;}
+.serv{
+	width: 350px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: #069 solid 2px;
+    margin-left: 5px;
+
+}
+.serv .pic
+{
+	width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+.pic img
+{
+	width:100%;
+}
+.serv .title
+{
+	width: 200px;
+    color: #069;
+    /* border-top: #069 solid 2px; */
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'HacenTunisiaBd';
+    display: inline-block;
+    vertical-align: top;
+	text-align:right;
+
+}
+.serv .title h3
+{
+	font-size:16px;
+	margin:5px 0px;
+}
+.serv .title h3 a
+{
+	text-decoration:none;
+}
+.serv .title h3 a:hover
+{
+	color:#23bcaf;
+}
+.serv .title p
+{
+	font-size:13px;
+	color:#828283;
+	line-height:25px;
+}
+.lstleft
+{
+	margin-left:0px;
+}
+.booking h2{
+	color:#50ae32;
+	font-size:22px;
+	font-family: 'HacenTunisiaLt';
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.booking .content{
+	border:#6acb4c solid 2px;
+}
+.booking .text{
+	vertical-align:top;
+	display:inline-block;
+	margin-right:0px;
+	width:475px;
+	font-family: 'HacenTunisiaLt';
+	color:#828283;
+	padding-right:10px;
+	padding-top:10px;
+}
+.booking .image{
+	display:inline-block;
+	width:190px;
+	vertical-align:top;
+	margin-top:60px;
+	margin-right:20px;
+}
+.booking .image img{
+	width:100%;
+}
+.book
+{
+}
+.fbook
+{
+	width:95%;
+}
+.fbook .labels
+{
+	width:30%;
+	display:inline-block;
+}
+.fbook .labels div
+{
+	margin-bottom:16px;
+}
+.fbook .select
+{
+	width:65%;
+	display:inline-block;
+	margin-bottom:30px;
+}
+.fbook select
+{
+	width:100%;
+	margin-bottom:15px;
+	border:1px solid #6acb4c;
+	color:#4fb330;
+	padding:1px 5px;
+	font-family: 'HacenTunisiaLt';
+}
+.fbook .sbutton
+{
+	float:left;
+	padding:5px 30px;
+	background-color:#6acb4c;
+	color:white;
+	border:none;
+	font-family: 'HacenTunisiaLt';
+	font-size:14px;
+	margin-bottom:30px;
+	cursor:pointer;
+}
+.news
+{
+	border-bottom:2px solid #f6f6f6;
+	padding-bottom:20px;
+}
+.news .art
+{
+	width:49%;
+	display:inline-block;
+}
+.news h2
+{
+	font-family: 'HacenTunisiaLt';
+	color:#3d5796;
+	font-size:22px;
+	border-bottom:2px solid #3d5796;
+	width:20%;
+}
+.news .image
+{
+	width:110px;
+	height:115px;
+	overflow:hidden;
+	display:inline-block;
+}
+.news .image img
+{
+	width:100%;
+}
+.news .text
+{
+	width:220px;
+	display:inline-block;
+	margin-right:5px;
+	vertical-align:top;
+}
+.news .text h2
+{
+	width:100%;
+	border:none;
+	font-size:16px;
+	margin-bottom:5px;
+	margin-top:2px;
+}
+.news .text h2 a
+{
+	text-decoration:none;
+}
+.news .text h2:hover > a
+{
+	color:#3d5796;
+}
+.news .text div
+{
+	color:#828283;
+	font-size:14px;
+	font-family: 'HacenTunisiaLt';
+	text-align:justify;
+}
+.news .left
+{
+	margin-right:10px;
+}
+.news .bt
+{
+	margin-top:20px;
+}
+.aboutus
+{
+	margin-top:30px;
+}
+.aboutus .image
+{
+	width:280px;
+	height:200px;
+	overflow:hidden;
+	display:inline-block;
+}
+.aboutus .text
+{
+	width:415px;
+	display:inline-block;
+	vertical-align:top;
+	margin-right:10px;
+}
+.aboutus .text h2
+{
+	color:#50ae32;
+	font-family: 'HacenTunisiaLt';
+	font-size:22px;
+	margin-bottom:5px;
+}
+.aboutus .text h2 a
+{
+	color:#50ae32;
+	text-decoration:none;
+}
+.aboutus .text h2:hover a
+{
+	color:#3f9623;
+}
+.aboutus .text p
+{
+	color:#828283;
+	font-family: 'HacenTunisiaLt';
+	font-size:15px;
+	line-height:25px;
+	text-align:justify;
+	margin-top:0px;
+}
+.aboutus .text .link
+{
+	color:#50ae32;
+	font-family: 'HacenTunisiaLt';
+	font-size:15px;
+	text-decoration:none;
+	float:left;
+}
+.aboutus .image img
+{
+	width:100%;
+}
+.articles
+{
+	width:100%;
+}
+.artmenu
+{
+	width:230px;
+	display:inline-block;
+}
+.artmenu ul
+{
+	list-style:none;
+	padding-right:0px;
+}
+.artmenu ul li
+{
+	list-style:none;
+}
+.artmenu ul li a
+{
+	color:#626262;
+	font-family: 'HacenTunisiaLt';
+	font-size:18px;
+	text-decoration:none;
+}
+.artmenu ul li ul li a
+{
+	color:#828283;
+	font-family: 'HacenTunisiaLt';
+	font-size:16px;
+	text-decoration:none;
+}
+.articles h2
+{
+	color:#3d5796;
+	font-family: 'HacenTunisiaLt';
+	font-size:22px;
+	margin-bottom:10px;
+	width:35%;
+	border-bottom:2px solid #3d5796;
+}
+.newsletter
+{
+	width:100%;
+	border:2px solid #6acb4c;
+	margin-bottom:45px;
+}
+.newsletter .text
+{
+	width:60%;
+	display:inline-block;
+	padding:10px;
+	margin-bottom:30px;
+}
+.newsletter .text h2
+{ 
+	color:#50ae32;
+	font-family: 'HacenTunisiaLt';
+	font-size:25px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+.newsletter .text p
+{ 
+	color:#828283;
+	font-family: 'HacenTunisiaLt';
+	font-size:16px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+.newsletter .nleft
+{
+	width:30%;
+	display:inline-block;
+	vertical-align:top;
+	padding-top:40px;
+	padding-right:30px;
+}
+.newsletter .nleft .tinput
+{
+	font-family: 'HacenTunisiaLt';
+	color:#c2c2c2;
+	border:1px solid #6acb4c; 
+	width:80%;
+	padding-right:5px;
+}
+.newsletter .nleft .check
+{
+	font-family: 'HacenTunisiaLt';
+	color:#c2c2c2;
+	border:1px solid #6acb4c; 
+}
+.newsletter .nleft label
+{
+	font-family: 'HacenTunisiaLt';
+	color:#c2c2c2;
+	font-size:12px;
+}
+.newsletter .nleft .sbutton
+{
+	font-family: 'HacenTunisiaLt';
+	color:white;
+	font-size:18px;
+	background-color:#6acb4c;
+	padding:0px 25px;
+	float:left;
+	border:none;
+	margin-left:37px;
+	cursor:pointer;
+}
+.newsletter .nleft div
+{
+	margin-bottom:10px;
+}
+.content_left{
+	width:225px;
+	display:inline-block;
+	vertical-align:top;
+	margin-right:25px;
+}
+.frst
+{
+	margin-top:25px!important;
+}
+.box
+{
+	width:100%;
+	border:2px solid #23bcaf;
+	margin-top:45px;
+	text-align:center;
+}
+.box .title
+{
+	background-color:#23bcaf;
+	text-align:center;
+}
+.box .title h2
+{
+	color:white;
+	font-size:20px;
+	font-family: 'HacenTunisiaLt';
+	margin:0px;
+	padding:5px 0px;
+}
+.box .text h2
+{
+	color:#17a79b;
+	font-size:18px;
+	font-family: 'HacenTunisiaLt';
+	margin:0px;
+	margin-top:10px;
+	text-align:center;
+}
+#slider1 h2 a
+{
+	width:100%;
+}
+.box .text h2 a
+{
+	color:#17a79b;
+}
+.box .text h4
+{
+	color:#585858;
+	font-size:18px;
+	font-family: 'HacenTunisiaLt';
+	margin:0px;
+	font-size:16px;
+	margin-top:10px;
+	text-align:center;
+	margin-bottom:5px;
+}
+.box .text
+{
+	 padding: 10px 15px 10px 15px;
+	font-family: 'HacenTunisiaLt';
+	text-align:right;
+}
+.box .text a
+{
+	text-decoration:none;
+	cursor:pointer;
+	color:#23bcaf;
+	width:53%;
+	display:inline-block;
+	vertical-align:top;
+}
+.box .text div
+{
+	text-align:center;
+}
+.box .text div label
+{
+	color:#828283;
+	font-size:12px;
+}
+.box .text div select
+{
+	margin-right:5px;
+	margin-left:5px;
+	border:1px solid #23bcaf;
+	color:#828283;
+}
+.box .text .sec
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.box .text .sec select
+{
+	margin-right:0px;
+	margin-left:0px;
+	border:1px solid #23bcaf;
+}
+.box .text .sec .tinput
+{
+	width: 140px;
+    padding: 2px 0px;
+	border:1px solid #23bcaf;
+}
+.box .text .sbutton
+{
+	font-family: 'HacenTunisiaLt';
+    color: white;
+    font-size: 14px;
+    background-color: #23bcaf;
+    padding: 0px 25px;
+    border: none;
+    cursor: pointer;
+}
+.bleft
+{
+	text-align:left!important;
+}
+.box .text p
+{
+	color:#828283;
+	font-size:16px;
+}
+.box .text .image
+{
+	width:35%;
+	display:inline-block;
+	text-align:center;
+	margin-right: 10px;
+    margin-top: -30px;
+}
+.image img
+{
+	width:100%;
+}
+.ads
+{
+	width:100%;
+	border:2px solid #f53388;
+	margin-top:45px;
+}
+.ads .title
+{
+	background-color:#f53388;
+	text-align:center;
+}
+.ads .title h2
+{
+	color:white;
+	font-size:20px;
+	font-family: 'HacenTunisiaLt';
+	margin:0px;
+	padding:5px 0px;
+}
+.ads .image
+{
+	padding:10px 5px;
+}
+.box .dimage
+{
+	width:150px;
+	height:150px;
+	border:2px solid #23bcaf;
+	border-radius:120px;
+	overflow:hidden;
+	margin:auto;
+	margin-top:15px!important;	
+}
+.align
+{
+	text-align:justify;
+}
+.footer
+{
+	width:100%;
+	background-color:#eeeeee;
+}
+.footer .sub
+{
+	font-family: 'HacenTunisiaLt';
+	width:19%;
+	padding-top:10px;
+	padding-right:10px;
+	display:inline-block;
+	vertical-align:top;
+}
+.cn
+{
+	text-align:center;
+}
+.footer .sub h2
+{
+	font-size:20px;
+	color:#3d5796;
+	margin-bottom:5px;
+	margin-top:0px;
+	
+}
+.footer .sub h2 a
+{
+	border-bottom:2px solid #3d5796;
+	text-decoration:none;
+	padding-left: 30px;
+	font-family: 'HacenTunisiaLt';
+	font-smooth: 2em;
+}
+.footer .sub .adress
+{
+	margin-top:18px;
+}
+.footer .sub p
+{
+	color:#808080;
+	margin:2px 0px;
+}
+.sub .fmenu
+{
+	margin-top:0px;
+}
+.fmenu ul
+{
+	list-style:none;
+	padding-right:5px;
+}
+.fmenu ul li {
+  text-indent: -5px;
+}
+.fmenu ul li a {
+  text-decoration:none;
+  color:#808080;
+}
+.fmenu ul li:before {
+  content: "-";
+  text-indent: -5px;
+}
+.footer .sub span
+{
+	color:#555555;
+}
+.footer .sub .tinput
+{
+	font-family: 'HacenTunisiaLt';
+	padding: 3px 0px;
+}
+.footer .sub .sbutton
+{
+	border:none;
+	cursor:pointer;
+	background:none;
+	color:white;
+	font-family: 'HacenTunisiaLt';
+	padding:5px 10px;
+	text-align:center;;
+}
+.footer .sec
+{
+	margin-top:25px;
+}
+.footer .sub .send
+{
+	background-color:#3d5796;
+	width:95%;
+}
+.footer .flogo
+{
+	width: 130px;
+    margin-top: 15px!important;
+    margin-bottom: 10px!important;
+    margin: auto;
+}
+.flogo img
+{
+	width:100%;
+}
+.footer .cp 
+{
+	text-align:center;
+	width:100%;
+	padding:10px 0px;
+	border-top:1px solid #e1e1e1;
+	font-family:tahoma;
+	color:#4e4d4d;
+	font-size:14px;
+}
+.footer .cp a
+{
+	text-decoration:none;
+	color:#888787;
+}
+.prv
+{
+	font-size:11px;
+	text-align:justify;
+	margin-bottom:15px;
+	
+}
+.sub .artmenu
+{
+	width:100%;
+}
+.sub .artmenu li a
+{
+	font-size:14px;
+}
+.dp
+{
+	list-style:none;
+	padding:0px;
+	border-radius:10px;
+	width:600px;
+}
+.prv p
+{
+	color:#ababab!important;
+}
+.nav-tabs>li.active>a
+{
+	background-color:#6acb4c!important;
+	color:white!important;
+	font-family: 'HacenTunisiaLt'!important;
+}
+.nav>li>a
+{
+	border:1px solid #6acb4c!important;
+	color:#6acb4c!important;
+	font-family: 'HacenTunisiaLt'!important;
+}
+.ism-slide a:hover
+{
+	text-decoration:none;
+}
+
+@media (min-width: 901px)
+{
+	.container
+	{
+		width:970px!important;
+	}
+}
+@media (max-width: 900px)
+{
+	.main
+	{
+		width:760px;
+	}
+	.logo
+	{
+		width: 25%;
+    	height: auto;
+		margin-bottom:10px;
+	}
+	.header
+	{
+		text-align:center;
+	}
+	.hleft
+	{
+		display:none;
+	}
+	.hleft .menu
+	{
+		display:none;
+	}
+	.menu ul li
+	{
+		padding-left: 5px;
+    	padding-right: 5px;
+	}
+	.search .tinput
+	{
+	    padding: 3px 5px 3px 0px;
+	}
+	.search .sbutton
+	{
+		background-repeat:no-repeat;
+		vertical-align: bottom;
+	}
+	.menu ul li a
+	{
+		font-size:12px;
+	}
+	.content_right
+	{
+		width:550px;
+	}
+	.container 
+	{
+		width: 100%!important;
+		padding: 0px!important;
+		margin: 0px;
+	}
+	.about .image
+	{
+		width:20%;
+	}
+	.about .text
+	{
+		width:72%;
+	}
+	.about .text h2
+	{
+		font-size:16px;
+	}
+	.about .text p
+	{
+		font-size:12px;
+	}
+	.about .text p a
+	{
+		font-size:12px;
+	}
+	.services
+	{
+		margin-top:0px;
+	}
+	.serv
+	{
+		width:100%;
+	}
+	.serv .title
+	{
+		padding-top:5px;
+	}
+	.booking h2
+	{
+		font-size:17px;
+	}
+	.booking .image
+	{
+		display:none;
+	}
+	.news h2
+	{
+		font-size:17px;
+	}
+	.news .art
+	{
+		width:48%;
+	}
+	.news .text
+	{
+		width:183px;
+	}
+	.news .image
+	{
+		width:70px;
+		height:70px;
+	}
+	.aboutus .image
+	{
+		width:150px;
+		height:100px;
+	}
+	.aboutus .text
+	{
+		width:380px;
+	}
+	.aboutus .text h2
+	{
+		margin-top:0px;
+		font-size:17px;
+	}
+	.articles h2
+	{
+		font-size:17px;
+		margin-bottom:10px;
+	}
+	.artmenu ul li a
+	{
+		font-size:14px;
+	}
+	.artmenu ul li ul li a
+	{
+		font-size:12px;
+	}
+	.artmenu
+	{
+		width:180px;
+	}
+	.newsletter .text h2
+	{
+		font-size:16px;
+	}
+	.newsletter .text p
+	{
+		font-size:14px;
+	}
+	.articles
+	{
+		margin-bottom:10px;
+	}
+	.newsletter .nleft
+	{
+		padding-top: 23px;
+   		padding-right: 0px;
+	    margin-right: 35px;
+	}
+	.newsletter .nleft .sbutton
+	{
+		font-size:14px;
+	}
+	.content_left
+	{
+		width:190px;
+		margin-right: 10px;
+	}
+	.box .title h2
+	{
+		font-size:16px;
+	}
+	.box .text p
+	{
+		font-size:14px;
+	}
+	.box .text
+	{
+		padding-top:5px;
+	}
+	.ads .title h2
+	{
+		font-size:16px;
+	}
+	.box .text h2
+	{
+		margin-bottom:10px;
+	}
+	.box .text h4
+	{
+		font-size:14px;
+	}
+	.box .text div select
+	{
+		margin-left:2px;
+		margin-right:2px;
+	}
+	.footer .sub .send
+	{
+		width:100%;
+	}
+	.footer .sub .tinput
+	{
+		width:70%;
+	}
+	.footer .sub h2
+	{
+		font-size:16px;
+	}
+}
+/* Advanced Checkbox Hack */
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  right: -9999px;
+}
+
+.label1 {
+  position: absolute;
+  right: 15px;
+  display: none;
+  width: 2em;
+  height: 2.25em;
+  padding: .35em;
+  font-size: 20px;
+  color: #6acb4c;
+  transition: color .3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  margin: 0;
+top:-5px;
+  z-index:100;
+}
+
+/* big screens */
+nav[role="off-canvas"] {
+  position: relative;
+  width: 50em;
+  margin: 0 auto;
+  transition-duration: .3s, .5s;
+  transition-timing-function: ease-in-out;
+  transition-property: right, opacity, box-shadow;
+  display:none;
+}
+nav[role="off-canvas"] a {
+  color: #fff;
+  text-decoration: none;
+font-family:"Arial_Narrow";
+font-size:16px;
+  transition: color .3s ease-in-out;
+  display: table-cell;
+  vertical-align: middle;
+}
+nav[role="off-canvas"] ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color:#6acb4c;
+}
+nav[role="off-canvas"] ul > li {
+  float: right;
+  padding: .55em .55em;
+  width: 8em;
+  height: 8em;
+  margin: .5em;
+/*  opacity: .8;*/
+  text-transform: uppercase;
+  display: table;
+    background: #6acb4c;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: box-shadow, color, opacity, padding-right;
+  cursor: pointer;
+
+  
+}
+nav[role="off-canvas"] ul > li:hover {
+  color: #fff;
+  opacity: 1;
+/*  box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.95);*/
+}
+nav[role="off-canvas"] ul > li:hover > a {
+  color: #fff;
+}
+nav[role="off-canvas"] ul > li:nth-child(2) {
+  background: #6acb4c;
+}
+nav[role="off-canvas"] ul > li:nth-child(3) {
+  background: #6acb4c;
+}
+nav[role="off-canvas"] ul > li:nth-child(4) {
+  background: #6acb4c;
+}
+nav[role="off-canvas"] ul > li:nth-child(5) {
+  background: #6acb4c;
+}
+
+
+/* small screens */
+@media screen and (max-width: 800px) {
+* {
+  box-sizing: border-box;
+}	
+  html,
+  body {
+
+
+  }
+	.ddsmoothmenu
+	{
+		display:none!important;
+	}
+	.ddsmoothmobile
+	{
+		display:none!important;
+	}
+  .maincontainer {
+    margin: 0.0em .5em 0 .5em;
+	width:auto;
+  }
+
+  nav[role="off-canvas"] {
+    position: absolute;
+    top: 3em;
+    right: -20em;
+    width: 20em;
+    opacity: 0;
+	display:block;
+  }
+  nav[role="off-canvas"] ul > li {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+  }
+ nav[role="off-canvas"] ul > li > ul >li {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+	
+  }
+  nav[role="off-canvas"] ul > li:hover {
+    box-shadow: none;
+  }
+
+  .label1 {
+    display: block;
+  }
+
+  .label1:after {
+    position: absolute;
+    left: .25em;
+    top: 0;
+    content: "\2261";
+    font-size: 1.8em;
+  }
+
+  .label1:hover
+  {
+    color: #6acb4c;
+	background-color:transparent;
+	
+  }
+  
+  input:checked ~ .label1 {
+    color: #6acb4c;
+	background-color:transparent;
+	
+  }
+  input:checked ~ nav[role="off-canvas"] {
+    opacity: 1;
+    right: 0;
+    /*box-shadow: -30em 0 0 30em rgba(0, 0, 0, 0.3);*/
+  }
+  input:checked ~ nav[role="off-canvas"] ul > li {
+	font-weight: normal;
+	position: relative;
+	padding-top: 0.55em;
+	padding-right: 1.5em;
+	padding-bottom: 0.55em;
+	padding-left: 0.55em;
+  }
+
+  input:checked ~ nav[role="off-canvas"] ul > li:hover {
+    padding-right: 1.5em;
+  }
+   input:checked ~ nav[role="off-canvas"] ul > li > ul > li {
+	font-weight:normal;
+	background-color:#17abf0;
+
+
+  }
+   input:checked ~ nav[role="off-canvas"] ul > li > ul > li:hover {
+    padding-right: 1.5em;
+	background-color:none;
+  }
+   input:checked ~ nav[role="off-canvas"] ul > li > ul > li:after {
+display:none;
+  }
+  input:checked ~ nav[role="off-canvas"] ul > li:after {
+    position: absolute;
+    right: .25em;
+	top:4px;
+    content: "\203A";
+    font: bold 1.4em sans-serif;
+	color:#fff;
+  }
+
+  input:checked ~ .maincontainer {
+    margin-right: 20.5em;
+    margin-left: -20.5em;
+  }
+}
+.maincontainer {
+
+  transition: margin .3s ease-in-out;
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.maincontainer {
+    margin:0px;
+	width:auto;
+  }
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  width:100%;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  height: 225px;
+  text-align: center;
+  line-height: 30px;
+}
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+#slider ul li .title
+{
+	background-color:#23bcaf;
+	text-align:center;
+}
+#slider ul li .title h2
+{
+	color:white;
+	font-size:20px;
+	font-family: 'HacenTunisiaLt';
+	margin:0px;
+	padding:5px 0px;
+}
+#slider ul li .text h2
+{
+	color:#17a79b;
+	font-size:18px;
+	font-family: 'HacenTunisiaLt';
+	margin:0px;
+	margin-top:10px;
+	text-align:center;
+}
+#slider ul li .text h4
+{
+	color:#585858;
+	font-size:18px;
+	font-family: 'HacenTunisiaLt';
+	margin:0px;
+	font-size:16px;
+	margin-top:10px;
+	text-align:center;
+}
+#slider ul li .text
+{
+	 padding: 10px 15px 10px 15px;
+	font-family: 'HacenTunisiaLt';
+	text-align:right;
+}
+#slider ul li .text a
+{
+	text-decoration:none;
+	cursor:pointer;
+	color:#23bcaf;
+	width:53%;
+	display:inline-block;
+	vertical-align:top;
+}
+#slider ul li .text div
+{
+	text-align:center;
+}
+#slider1 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  width:100%;
+  height:450px;
+}
+
+#slider1 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider1 ul li {
+  position: relative;
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  height: 450px;
+  text-align: center;
+  line-height: 30px;
+}
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+

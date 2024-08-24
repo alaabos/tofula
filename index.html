@@ -1,0 +1,1214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/my-slider.css" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/mobilemenu.css"/>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="js/ism-2.0.1-min.js"></script>
+<title>tufoola</title>
+</head>
+<input type="checkbox" id="menu">
+<label class="label1"for="menu" onclick></label>
+<nav role="off-canvas">
+    <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">الاستعداد للحمل</a></li>
+        <li><a href="#">فترة الحمل </a></li>
+        	<ul>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+              <li><a href="#">Item</a></li>
+              
+            </ul>
+        <li><a href="#">طفلك الرضيع</a></li>
+        <li><a href="#">طفلك الدراج</a></li>
+		<li><a href="#">اسأل طبيبك</a></li>
+    </ul> 
+</nav>
+<body>
+<div class="page maincontainer">
+<div class="main">
+     <div class="header">
+              <div class="logo">
+                  <img src="images/logo.png" />
+              </div>
+              <div class="hleft">
+              	<div class="top">
+                	<div class="social">
+                        <a href="#"><img src="images/google.jpg"/></a>
+                        <a href="#"><img src="images/twitter.jpg"/></a>
+                        <a href="#"><img src="images/facebook.jpg"/></a>
+                	</div><!--social !-->
+                    <div class="search">
+                        <form class="h_search" method="get" action="http://www.google.com">
+                            <input type="text" class="tinput" name="q" size="21" maxlength="120" value="البحث في الموقع">
+                            <input type="submit" value="" class="sbutton">
+                        </form>
+                    </div>
+                    <div class="login">
+                        <a id="modal_trigger" href="#modal" class="btn">تسجيل الدخول</a>
+                    
+                        <div id="modal" class="popupContainer" style="display:none;">
+                            <header class="popupHeader">
+                                <span class="header_title">تسجيل الدخول</span>
+                                <span class="modal_close"><i class="fa fa-times"></i></span>
+                            </header>
+                            
+                            <section class="popupBody">
+                                <!-- Social Login -->
+                                <div class="social_login">
+                                    <div class="">
+                                        <a href="#" class="social_box fb">
+                                            <span class="icon"><i class="fa fa-facebook"></i></span>
+                                            <span class="icon_title">تسجيل دخلو بواسطة فيسبوك</span>
+                                            
+                                        </a>
+                    
+                                        <a href="#" class="social_box google">
+                                            <span class="icon"><i class="fa fa-google-plus"></i></span>
+                                            <span class="icon_title">تسجيل دخول بواسطة غوغل</span>
+                                        </a>
+                                    </div>
+                    
+                                    <div class="centeredText">
+                                        <span>أو بواسطة إيميلك الشخصي</span>
+                                    </div>
+                    
+                                    <div class="action_btns">
+                                    	<div class="one_half last"><a href="#" id="register_form" class="btn">إنشاء حساب</a></div>
+                                        <div class="one_half"><a href="#" id="login_form" class="btn">تسجيل دخول</a></div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Username & Password Login form -->
+                                <div class="user_login">
+                                    <form>
+                                        <label>البريد الالكتروني | اسم المستخدم</label>
+                                        <input type="text" />
+                                        <br />
+                    
+                                        <label>كلمة المرور</label>
+                                        <input type="password" />
+                                        <br />
+                    
+                                        <div class="checkbox">
+                                            <input id="remember" type="checkbox" />
+                                            <label for="remember">تذكر هذا الحساب </label>
+                                        </div>
+                    
+                                        <div class="action_btns">
+                                        	<div class="one_half last"><a href="#" class="btn btn_red">تسجيل دخول</a></div><strong></strong>
+                                            <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-right"></i> إلى الخلف</a></div>
+                                            
+                                        </div>
+                                    </form>
+                    
+                                    <a href="#" class="forgot_password">نسيت كلمة المرور</a>
+                                </div>
+                    
+                                <!-- Register Form -->
+                                <div class="user_register">
+                                    <form>
+                                        <label>الاسم الكامل </label>
+                                        <input type="text" />
+                                        <br />
+                    
+                                        <label>البريد الالكتروني</label>
+                                        <input type="email" />
+                                        <br />
+                    
+                                        <label>كلمة المرور</label>
+                                        <input type="password" />
+                                        <br />
+                    
+                                        <div class="action_btns">
+                                        	 <div class="one_half last"><a href="#" class="btn btn_red">إرسال</a></div>
+                                            <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> إلى الخلف</a></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                                    </div>
+                  <div class="menu">
+                          <ul>
+                              <li><a href="">الرئيسية</a></li>
+                            <li class="has-sub"> <a href="">الرئيسية</a>
+                            <div class="dp">
+                            	<ul class="dashed">
+                                <h3>
+                                القائمة الأولى
+                                </h3>
+                                <li><a href="#">صحتك قبل الحمل</a></li>
+                                  <li><a href="#">دليل الصحة قبل الحمل</a></li>
+                                  <li><a href="#">دليل موانع الحمل الكامل</a></li>
+                                  <li><a href="#">دليل التغذية و تأثيرها على الخصوبة</a></li>
+                                </ul>
+                                <ul class="dashed">
+                                <h3>
+                                القائمة الأولى
+                                </h3>
+                                <li><a href="#">صحتك قبل الحمل</a></li>
+                                  <li><a href="#">دليل الصحة قبل الحمل</a></li>
+                                  <li><a href="#">دليل موانع الحمل الكامل</a></li>
+                                  <li><a href="#">دليل التغذية و تأثيرها على الخصوبة</a></li>
+                                </ul>
+                                <ul class="dashed">
+                                <h3>
+                                القائمة الأولى
+                                </h3>
+                                <li><a href="#">صحتك قبل الحمل</a></li>
+                                  <li><a href="#">دليل الصحة قبل الحمل</a></li>
+                                  <li><a href="#">دليل موانع الحمل الكامل</a></li>
+                                  <li><a href="#">دليل التغذية و تأثيرها على الخصوبة</a></li>
+                                </ul>
+                                <ul class="dashed">
+                                <h3>
+                                القائمة الأولى
+                                </h3>
+                                <li><a href="#">صحتك قبل الحمل</a></li>
+                                  <li><a href="#">دليل الصحة قبل الحمل</a></li>
+                                  <li><a href="#">دليل موانع الحمل الكامل</a></li>
+                                  <li><a href="#">دليل التغذية و تأثيرها على الخصوبة</a></li>
+                                </ul>
+                                <ul class="dashed">
+                                <h3>
+                                القائمة الأولى
+                                </h3>
+                                <li><a href="#">صحتك قبل الحمل</a></li>
+                                  <li><a href="#">دليل الصحة قبل الحمل</a></li>
+                                  <li><a href="#">دليل موانع الحمل الكامل</a></li>
+                                  <li><a href="#">دليل التغذية و تأثيرها على الخصوبة</a></li>
+                                </ul>
+                            </div>
+                            </li>
+                              <li><a href="">فترة الحمل</a></li>
+                               <li><a href="">طفلك الرضيع</a></li>
+                              <li><a href="">طفلك الدراج</a></li>
+                              <li><a href="">اسأل طبيبك</a></li>
+                               <li><a href="">اتصل بنا</a></li>
+                              <li><a href="">من نحن</a></li>
+                        </ul>
+                        
+                  </div>
+              </div>
+       </div> <!--header !--> 
+		   	<div class="slider">
+        	<div class='container'>
+					<div class="ism-slider" data-radios="false">
+  						<ol>
+                            <li>
+                              <img src="images/slider.jpg">
+                              <a href="#">
+                              <span class="fst">إن كنتِ تتوقعين مولوداً جديداً، لديكِ أطفال بالفعل، </span><br>
+                              <span class="sec"> يمكنك التعرُّف على أصدقاء مثلك، تتبادلين معهم الخبرات</span><br>
+                              <div class="button">
+                              اقرأ المزيد 
+                              </div>
+                              </a>
+                              
+                            </li>
+                            <li>
+                              <img src="images/slider2.jpg">
+                               <a href="#">
+                              <span class="fst">Civil Affairs</span><br>
+                              <span class="sec">Syrian Arab Republic</span>
+                              </a>
+                            </li>
+                      </ol>
+					</div><!--ism-slider !-->
+				</div><!--container !-->
+        </div><!--slider !-->
+    <div class="content_right">
+           <div class="about">
+               <div class="text">
+                   <h2>نحن هنا لدعمك و مساندتك في رحلتك الجديدة و المشوِّقة كليّاً</h2>
+                   <p>
+                   قام بكتابة وإعداد جميع مقالاتنا نخبة من الأطباء والأخصائيين العرب المختصون بصحة الحمل والأطفال من مختلف الإختصاصات،  والذين بدورهم يقدمون لجميع متابعيهم على حسابات التواصل الإجتماعي النصائح الطبية والمعلومات التثقيفية العامة.<br />
+        تابعونا على تويتر 
+        <a href="#">tufoola@</a> 
+        لنصلكم بالطبيب المختص.<br/>
+        تصفحوا<a href="#"> أدوات الموقع التفاعلية </a>لحساب موعد الولادة، أو الإباضة، تقويم الحمل، الأدوية وغيرها الكثير
+                   </p>
+                </div>
+                 <div class="image">
+                   	<img src="images/info.jpg" />
+                 </div> 
+            </div><!--rabout !-->
+           <div class="services">
+                  <div class="serv">
+                      <div class="pic">
+						<a href="#">                      
+                           <img src="images/pic1.jpg" />
+                           </a>
+                       </div>
+                       <div class="title">
+                       	<h3>
+                        <a href="#">
+                       الحمل والولادة
+                       </a>
+                       </h3>
+                       <p>
+                       تابعي مراحلَ نموِّ جنينك من لحظة الحمل الأولى و طوال فترة الحمل حتى يوم الولادة
+الآن باتَ باستطاعتك مشاهدة جنينك
+						</p>
+                       </div>
+                   </div> 
+                    <div class="serv">
+                      <div class="pic">
+                      <a href="#">
+                           <img src="images/pic2.jpg" />
+                           </a>
+                       </div>
+                       <div class="title">
+                         <h3>
+                            <a href="#">
+                           الريجيم وتخفيف الوزن
+                           </a>
+                           </h3>
+                           <p>
+                           إطرح أسئلتك الطبية بخصوصية تامة على نخبة الأطباء والأخصائيين العرب
+مع موقع طفولة
+                           </p>
+                       </div>
+                   </div> 
+                    <div class="serv">
+                      <div class="pic">
+                      <a href="#">
+                           <img src="images/pic3.jpg" />
+                           </a>
+                       </div>
+                       <div class="title">
+                       <h3>
+                            <a href="#">
+                           آخر الاخبار الصحية
+                           </a>
+                           </h3>
+                           <p>
+                           تصنيف موقع طفولة في المرتبة السادسة من بين افضل عشر مواقع عربية تهتم بالمرأة 12/مارس/2013
+                           </p>
+                       </div>
+                   </div>   
+                    <div class="serv lstleft">
+                      <div class="pic">
+                      	<a href="#">
+                           <img src="images/pic4.jpg" />
+                           </a>
+                       </div>
+                       <div class="title">
+                         <h3>
+                            <a href="#">
+                           دليل الصحة العامة
+                           </a>
+                           </h3>
+                           <p>
+                           الكثير من الاشخاص يصبحون والدين دون معرفة الكثير عن..
+                           </p>
+                       </div>
+                   </div> 
+           </div><!--services !-->
+           
+           <div class="booking">
+                <h2>
+                حجز المواعيد والبحث عن الأطباء
+                </h2>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">فرز حسب اختصاص الطبيب</a></li>
+                    <li><a data-toggle="tab" href="#menu1">فرز حسب اسم الطبيب</a></li>
+                  </ul>
+                <div class="tab-content">
+                <div id="home" class="content tab-pane fade in active">
+                     <div class="text">
+                     <p>
+                محرك بحث مجاني يقوم بالبحث عن الطبيب المختص الذي تريد حجز موعد لديه إما حسب 
+نوع الاختصاص أو اسم الطبيب ويتم تأكيد الحجز وتثبيته بشكل شخصي .
+					</p>
+					<div class="book">
+                        <form class="fbook" method="get" action="http://www.google.com">
+                        	<div class="labels">
+                            	<div><label>اسم الطبيب : </label></div>
+                               <div> <label>المدينة : </label></div>
+                                <div><label>نوع الموعد : </label></div>
+                                
+                            </div>
+                            <div class="select">
+                            	<select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select><br />
+                                <select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select><br />
+                                <select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select><br />
+                            </div>
+                            <input type="submit" value="البحث" class="sbutton">
+                        </form>
+                    </div>
+                     </div>
+                     <div class="image">
+                     <img src="images/doctor.jpg" />
+                     </div>
+                </div>
+                <div class="content tab-pane fade" id="menu1">
+                     <div class="text">
+                     <p>
+                محرك بحث مجاني يقوم بالبحث عن الطبيب المختص الذي تريد حجز موعد لديه إما حسب 
+نوع الاختصاص أو اسم الطبيب ويتم تأكيد الحجز وتثبيته بشكل شخصي .
+					</p>
+					<div class="book">
+                        <form class="fbook" method="get" action="http://www.google.com">
+                        	<div class="labels">
+                            	<div><label>اسم الطبيب : </label></div>
+                               <div> <label>المدينة : </label></div>
+                                <div><label>نوع الموعد : </label></div>
+                                
+                            </div>
+                            <div class="select">
+                            	<select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select><br />
+                                <select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select><br />
+                                <select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select><br />
+                            </div>
+                            <input type="submit" value="البحث" class="sbutton">
+                        </form>
+                    </div>
+                     </div>
+                     <div class="image">
+                     <img src="images/doctor.jpg" />
+                     </div>
+                </div>
+                </div>
+           
+    	</div><!--booking !-->
+    	<div class="news">
+        	<h2>
+            آخر المقالات
+            </h2>
+            <div class="sub">
+            	<div class="art">
+                	<div class="image">
+                    	<a href="#"> 
+                    	<img src="images/n1.jpg"/>
+                        </a>
+                    </div>
+                    <div class="text">
+                    	<h2>
+                        <a href="#"> 
+                        طفلك من 12 حتى 36 شهر
+                        </a>
+                        </h2>
+                        <div>
+                        أهلاً بك في مرحلة الطفولة الدارجة! هذه المرحلة المليئة بالتحديات و المفاجئات و الصعوبات. 
+                        </div>
+                    </div>
+                </div>
+                <div class="art left">
+                	<div class="image">
+                    	<a href="#"> 
+                    	<img src="images/n2.jpg"/>
+                        </a>
+                    </div>
+                    <div class="text">
+                    	<h2>
+                        <a href="#"> 
+                        اللعب و التسلية و الضحك
+                        </a>
+                        </h2>
+                        <div>
+                        أهلاً بك في مرحلة الطفولة الدارجة! هذه المرحلة المليئة بالتحديات و المفاجئات و الصعوبات. 
+                        </div>
+                    </div>
+                </div>
+                <div class="art bt">
+                	<div class="image">
+                    	<a href="#"> 
+                    	<img src="images/n3.jpg"/>
+                        </a>
+                    </div>
+                    <div class="text">
+                    	<h2>
+                        <a href="#"> 
+                        تطوير مهارات الطفل اللغوية والسمعية
+                        </a>
+                        </h2>
+                        <div>
+                        أهلاً بك في مرحلة الطفولة الدارجة! هذه المرحلة المليئة بالتحديات و المفاجئات و الصعوبات. 
+                        </div>
+                    </div>
+                </div>
+                <div class="art left bt">
+                	<div class="image">
+                    	<a href="#"> 
+                    	<img src="images/n4.jpg"/>
+                        </a>
+                    </div>
+                    <div class="text">
+                    	<h2>
+                        <a href="#"> 
+                        ألف باء تدريب طفلي على الحمام
+                        </a>
+                        </h2>
+                        <div>
+                        أهلاً بك في مرحلة الطفولة الدارجة! هذه المرحلة المليئة بالتحديات و المفاجئات و الصعوبات. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--news !-->
+        <div class="aboutus">
+        	<div class="image">
+            	<img src="images/aboutus.jpg"/>
+            </div>
+            <div class="text">
+            	<h2>
+                <a href="#">
+                عائلة طفولة
+                </a>
+                </h2>
+                <p>
+                إن كنتِ تتوقعين مولوداً جديداً، لديكِ أطفال بالفعل، أم تحاولينَ الإنجاب للمرَّة الأولى أو مرة أخرى، فهنا يمكنك التعرُّف على أصدقاء مثلك، تتبادلين معهم الخبرات و التجارب خطوةً بخطوة.
+
+                </p>
+                <a class="link" href="#">انضمي إلينا هنا.....</a>
+            </div>
+        </div><!--aboutus !-->
+        <div class="articles">
+        	<h2>المقالات والروابط المميزة:</h2>
+        	<div class="artmenu">
+            	<ul>
+                	<li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div><!--artmenu !-->
+            <div class="artmenu">
+            	<ul>
+                	<li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="artmenu">
+            	<ul>
+                	<li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div><!--articles !-->
+        <div class="newsletter">
+        	<div class="text">
+            	<h2>
+                اشتركِ في نشرتنا البريدية:
+                </h2>
+                <P>
+                تابعي مراحل تطور جنينك طوال فترة الحمل و السنين الأولى لطفلك من خلال نشرة مصممة خصيصا لك.<br />
+مهما تكن المرحلة التي تمرين بها فهي بالتأكيد لا تفوَّت.
+                </P>
+            </div>
+             <div class="nleft">
+                <form class="nltform" method="get" action="http://www.google.com">
+                	<div>
+                    <input type="text" class="tinput" name="q" size="21" maxlength="120" value="البريد الالكتروني">
+                    </div>
+                    <div>
+                    <input type="checkbox" class="check" name="q" size="21" maxlength="120" value="">
+                    <label>اشترك في النشرة اليومية</label>
+                    </div>
+                    <input type="submit" value="اشترك" class="sbutton">
+                </form>
+              </div>
+        </div><!--newsletter !-->
+    </div>
+    
+    <div class="content_left">
+    	<div class="box frst" id="slider">
+             <div class="title">
+                <h2>
+                إسأل طبيبك
+                </h2>
+            </div>
+        	<ul>
+                <li>
+                    <div class="text">
+                        <p>
+                        إطرح أسئلتك الطبية بخصوصية تامة 
+        على نخبة الأطباء والأخصائيين العرب
+        مع موقع طفولة
+                        </p>
+                        <a href="#">
+                        المزيد..
+                        </a>
+                        <div class="image">
+                            <img src="images/doc.png"/>
+                        </div>
+                    </div>
+           		</li>
+                <li>
+                   
+                    <div class="text">
+                        <p>
+                        إطرح أسئلتك الطبية بخصوصية تامة 
+        على نخبة الأطباء والأخصائيين العرب
+        مع موقع طفولة
+                        </p>
+                        <a href="#">
+                        المزيد..
+                        </a>
+                        <div class="image">
+                            <img src="images/doc.png"/>
+                        </div>
+                    </div>
+           		</li>
+                
+              </ul>  
+        	
+        </div><!--box !-->
+        <div class="ads">
+        	<div class="title">
+            	<h2>
+                إعلانات AdSense
+                </h2>
+            </div>
+            <div class="image">
+                <img src="images/ads1.jpg"/>
+            </div>
+        </div><!--ads !-->
+        <div class="box" id="slider1">
+        	<div class="title">
+                        <h2>
+                       إلتقي خبرائنا
+                        </h2>
+                    </div>
+            <ul>
+                    <li>
+                    
+                    <div class="dimage">
+                        <img src="images/doc1.png"/>
+                    </div>
+                    <div class="text">
+                        <h2>
+                        <a href="#">
+                       الدكتور أحمد الصالح
+                       </a>
+                        </h2>
+                        <p class="align">
+                       استشاري - البورد الكندي وزمالتي جامعة جونز هوبك نز الأميركية وميچيل الكندية في جراحة العيون والماء الأبيض والليزك والأطفال والحول، بكالوريس جراحة جامعة الملك سعود
+                        </p>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="dimage">
+                        <img src="images/doc1.png"/>
+                    </div>
+                    <div class="text">
+                        <h2>
+                        <a href="#">
+                       الدكتور أحمد الصالح
+                       </a>
+                        </h2>
+                        <p class="align">
+                       استشاري - البورد الكندي وزمالتي جامعة جونز هوبك نز الأميركية وميچيل الكندية في جراحة العيون والماء الأبيض والليزك والأطفال والحول، بكالوريس جراحة جامعة الملك سعود
+                        </p>
+                    </div>
+                    </li>
+            </ul>
+        </div><!--box !-->
+        <div class="ads">
+        	<div class="title">
+            	<h2>
+                إعلانات AdSense
+                </h2>
+            </div>
+            <div class="image">
+                <img src="images/ads1.jpg"/>
+            </div>
+        </div><!--ads!-->
+        <div class="box">
+        	<div class="title">
+            	<h2>
+               أدوات الموقع التفاعلية
+                </h2>
+            </div>
+            <div class="text">
+            	<p class="align">
+                	لزيادة احتمال نجاح الحمل، يمكن احتساب فترة الإباضة وذلك بحسب تاريخ آخر دورة شهرية 
+                </p>
+                <h4>
+                ما هو تاريخ آخر دورة شهرية؟
+                </h4>
+                <div>
+                	<select>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <select>
+                      <option value="may">may</option>
+                      <option value="june">june</option>
+                      <option value="july">july</option>
+                      <option value="september">sep</option>
+                    </select>
+                    <select>
+                      <option value="2010">2010</option>
+                      <option value="2011">2011</option>
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                    </select>
+                </div>
+                <div class="sec">
+                	<label>تحديد مدة الدورة الشهرية:</label>
+                    <select>
+                      <option value="2010">2010</option>
+                      <option value="2011">2011</option>
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                    </select>
+                </div>
+                <div class="bleft">
+                 <input type="submit" value="حساب" class="sbutton">
+                 </div>
+            </div>
+        </div><!--box !-->
+        <div class="box">
+        	<div class="title">
+            	<h2>
+                ابحث عن اسم طفلك 
+                </h2>
+            </div>
+            <div class="text">
+            	<p>
+                	يمكن أن تبحث بحسب الاسم أو حسب  الأحرف الأبجدية 
+                </p>
+                <h4>
+                يمكن كتابة جزء من الاسم
+                </h4>
+                <div class="sec">
+                	<label>الاسم :</label>
+                    <input type="text" class="tinput" name="q" size="21" maxlength="120" value=" ">
+                </div>
+                 <div class="bleft">
+                 <input type="submit" value="بحث" class="sbutton">
+                 </div>
+            </div>
+        </div><!--box !-->
+    </div><!--left !-->
+</div><!--main !-->
+<div class="footer">
+	<div class="main">
+    	<div class="sub">
+        	<h2>
+            <a href="#">
+            العنوان
+            </a>
+            </h2>
+            <div class="adress">
+            <p>
+            <span>العنوان: </span> الدولة - المدينة - الشارع التفصيل 
+            </p>
+            <p>
+            <span>الهاتف : </span>00000000 - 000000000
+            </p>
+            <p>
+            <span>البريد الالكتروني :</span> info@tofula.com
+            </p>
+            </div>
+        </div><!--sub !-->
+        <div class="sub mob">
+        	<h2>
+            <a href="#">
+            الصفحات المهمة:
+            </a>
+            </h2>
+            <div class="fmenu">
+            	<ul>
+                 <li>
+                 <a href="#">
+                 الرئيسية 
+                 </a>
+                 </li>
+                  <li>
+                 <a href="#">
+                  الاستعداد للحمل 
+                 </a>
+                 </li>
+                 <li>
+                 <a href="#">
+                  فترة الحمل
+                 </a>
+                 </li>
+                 <li>
+                 <a href="#">
+                  طفلك الرضيع 
+                 </a>
+                 </li>
+                 <li>
+                 <a href="#">
+                   طفلك الدراج 
+                 </a>
+                 </li>
+                </ul>
+            </div>
+        </div><!--sub !-->
+        <div class="sub mob">
+        	<h2>
+            <a href="#">
+            الصفحات المهمة:
+            </a>
+            </h2>
+            <div class="artmenu">
+            	<ul>
+                	<li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div><!--sub !-->
+        <div class="sub mob">
+        	<h2>
+            <a href="#">
+            الصفحات المهمة:
+            </a>
+            </h2>
+           <div class="artmenu">
+            	<ul>
+                	<li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li>
+                    <a href="#">نصائح ما قبل الحمل</a>
+                    <ul>
+                    <li>
+                    <a href="#">صحتك قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل الصحة قبل الحمل</a>
+                    </li>
+                    <li>
+                    <a href="#">دليل التغذية و تأثيرها على الخصوبة</a>
+                    </li>
+                     <li>
+                    <a href="#"> دليل موانع الحمل الكامل</a>
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div><!--artmenu !-->
+        </div><!--sub !-->
+        <div class="sub mob cn">
+        	
+             <div class="flogo">
+             	<img src="images/logo.png"/>
+             </div>
+             <div class="prv">
+             <p>
+             خضع جميع المحتويات والنصوص لحقوق النشر، موقع طفولة، 
+                جميع الحقوق محفوظة 2011 - 2012
+                
+                ينشر هذا الموقع من قبل طفولة دوت كوم وهي مسؤولة عن محتوياته كما هو مشار إليه في
+                شروط الاستخدام
+                .
+                يقدّم موقع الإنترنت هذا معلومات ذات طبيعة عامّة وقد صُمّم للأغراض التثقيفية فقط.
+                إن كان لديك أية مخاوف حول صحتك أو صحة طفلك، عليك دائماً مراجعة الطبيب أو أي مختص بالعناية الطبية.
+                يرجى مراجعة شروط الإستخدام قبل استخدام الموقع.
+                شروط الإستخدام
+             </p>
+             </div>
+        </div><!--sub !-->
+        
+    </div>
+    <div class="cp">
+        	Copyrights © 2016 <a href="#">Tufoola</a>. All Rights Reserved. 
+    	</div>
+</div><!--footer !-->
+</div>
+<script>
+openCity("London")
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+</script>
+<script>
+jQuery(document).ready(function ($) {
+ setInterval(function () {
+        moveRight();
+    }, 2000);
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            right: + slideWidth
+        }, 500, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('right', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            right: - slideWidth
+        }, 500, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('right', '');
+        });
+		
+    };
+	
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+jQuery(document).ready(function ($) {
+ setInterval(function () {
+        moveRight();
+    }, 2000);
+  
+	var slideCount1 = $('#slider1 ul li').length;
+	var slideWidth1 = $('#slider1 ul li').width();
+	var slideHeight1 = $('#slider1 ul li').height();
+	var sliderUlWidth1 = slideCount1 * slideWidth1;
+	
+	$('#slider1').css({ width: slideWidth1, height: slideHeight1 });
+	
+	$('#slider1 ul').css({ width: sliderUlWidth1, marginLeft: - slideWidth1 });
+	
+    $('#slider1 ul li:last-child').prependTo('#slider1 ul');
+
+    function moveLeft() {
+        $('#slider1 ul').animate({
+            right: + slideWidth1
+        }, 500, function () {
+            $('#slider1 ul li:last-child').prependTo('#slider1 ul');
+            $('#slider1 ul').css('right', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider1 ul').animate({
+            right: - slideWidth1
+        }, 500, function () {
+            $('#slider1 ul li:first-child').appendTo('#slider1 ul');
+            $('#slider1 ul').css('right', '');
+        });
+		
+    };
+	
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});  
+$("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+	$(function(){
+		// Calling Login Form
+		$("#login_form").click(function(){
+			$(".social_login").hide();
+			$(".user_login").show();
+			return false;
+		});
+
+		// Calling Register Form
+		$("#register_form").click(function(){
+			$(".social_login").hide();
+			$(".user_register").show();
+			$(".header_title").text('Register');
+			return false;
+		});
+
+		// Going back to Social Forms
+		$(".back_btn").click(function(){
+			$(".user_login").hide();
+			$(".user_register").hide();
+			$(".social_login").show();
+			$(".header_title").text('Login');
+			return false;
+		});
+
+	}) 
+</script>
+
+</body>
+</html>

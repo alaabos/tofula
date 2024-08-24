@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HacenTunisiaBold';
+  src: url('HacenTunisiaBold.eot');
+  src: url('HacenTunisiaBold.woff2') format('woff2'),
+       url('HacenTunisiaBold.woff') format('woff'),
+       url('HacenTunisiaBold.ttf') format('truetype'),
+       url('HacenTunisiaBold.svg#HacenTunisiaBold') format('svg'),
+       url('HacenTunisiaBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
